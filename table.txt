@@ -1,0 +1,18 @@
+/****** Object:  Table [dbo].[MovieTable]    Script Date: 5/7/2024 4:08:42 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[MovieTable](
+	[MovieName] [nvarchar](50) NOT NULL,
+	[Rating] [nchar](10) NULL,
+	[Director] [nvarchar](50) NOT NULL,
+	[country] [nvarchar](50) NOT NULL,
+	[image] [nvarchar](max) NULL,
+	[summary] [nvarchar](max) NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
